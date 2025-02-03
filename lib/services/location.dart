@@ -1,7 +1,7 @@
 import 'package:geolocator/geolocator.dart';
 
 class Location {
-  double? latitude, longitude;
+  double latitude = 0.0, longitude = 0.0;
 
   Future<void> getCurrentLocation() async {
     final LocationSettings locationSettings = LocationSettings(
